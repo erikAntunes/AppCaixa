@@ -8,25 +8,25 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-import br.com.digitalhouse.postapp.model.Post;
-import br.com.digitalhouse.postapp.repository.PostRepository;
+import br.com.digitalhouse.postapp.model.Produto;
+import br.com.digitalhouse.postapp.repository.ProdutoRepository;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.schedulers.Schedulers;
 
-public class PostViewModel extends AndroidViewModel {
+public class ProdutoViewModel extends AndroidViewModel {
 
-    private MutableLiveData<List<Post>> postsLiveData = new MutableLiveData<>();
+    private MutableLiveData<List<Produto>> postsLiveData = new MutableLiveData<>();
 
-    private PostRepository repository = new PostRepository();
+    private ProdutoRepository repository = new ProdutoRepository();
     private CompositeDisposable disposable = new CompositeDisposable();
 
-    public PostViewModel(@NonNull Application application) {
+    public ProdutoViewModel(@NonNull Application application) {
         super(application);
     }
 
-    public LiveData<List<Post>> getPostLiveData() {
+    public LiveData<List<Produto>> getPostLiveData() {
         return postsLiveData;
     }
 

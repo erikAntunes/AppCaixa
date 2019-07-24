@@ -6,22 +6,18 @@
     android:layout_height="wrap_content"
     android:layout_margin="8dp">
 
-    <ImageView
-        android:id="@+id/post_image_id"
-        android:layout_width="match_parent"
-        android:layout_height="150dp" />
 
     <TextView
-        android:id="@+id/post_titulo_text_view_id"
+        android:id="@+id/nome_produto_text_view_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:gravity="left"
         android:textStyle="bold"
         android:textSize="18sp"
-        tools:text="Titulo do Post"/>
+        tools:text="Nome do Produto"/>
 
     <TextView
-        android:id="@+id/post_descricao_text_view_id"
+        android:id="@+id/preco_produto_text_view_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Texto Descritivo do Post" />
